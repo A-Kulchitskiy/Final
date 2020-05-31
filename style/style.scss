@@ -124,5 +124,86 @@
     header {
         width: 100%;
         margin-left: 70px;
-        background: #FC7858;
+        display: flex;
+        // background: #FC7858;
+
+        button {
+            width: 70px;
+            height: 71px;
+            background: none;
+            border: none;
+            border-left: 1px solid #f1f1f1;
+            border-right: 1px solid #f1f1f1;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:nth-child(1) {
+            background: url(../img/icon/rounded.png) no-repeat center center;
+        }
+
+        button:nth-child(2) {
+            background: url(../img/icon/folder.png) no-repeat center center;
+        }
+
+        button:nth-child(3) {
+            background: url(../img/icon/settings_2.png) no-repeat center center;
+        }
+
+        button:nth-child(5) {
+            background: url(../img/icon/upload.png) no-repeat center center;
+        }
+
+        button:nth-child(6) {
+            background: url(../img/icon/envelope.png) no-repeat center center;
+        }
+
+        button:nth-child(7) {
+            background: url(../img/icon/rounded.png) no-repeat center center;
+        }
+
+        button:nth-child(10) {
+            border: none;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            padding-left: calc(50vh - 70px);
+            padding-right: calc(50vh - 70px);
+        }
+
+            input {
+                width: 300px;
+                padding: 12px 0 11px 13px;
+                border-radius: 20px;
+                border: solid #F1F1F1;
+                background: #f8f8f8;
+                background: url(../img/icon/zoom.png) no-repeat 95% center;
+            }  
+            
+        .face-name {
+            display: flex;
+            flex-direction: column;
+            padding-left: 18px;
+            padding-top: 22px;
+        }
+            .head-name {
+                font-size: 13px;
+                font-weight: bold;
+                background: linear-gradient(to left, #FC7858, #FD4F74);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+            .head-description {
+                font-size: 10px;
+                color: #BFBFBF;
+            }
+
+        .head-ponts {
+            background: url(../img/icon/points.png) no-repeat center center;
+        }        
     }
+
+    

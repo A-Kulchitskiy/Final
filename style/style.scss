@@ -2,31 +2,38 @@
         margin: 0;
         padding: 0;
     }
-    
+
     body {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
         box-sizing: border-box;
         font-family: 'Lato', sans-serif;
     }
-    
-    .container {
-        width: 1140px;
-        margin: 0 auto;
-    }
+
+
     /* Navigation==============
 ============= */
     /* logotype==========
 ========= */
-    
+
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
     .logo {
         width: 33px;
         height: 23px;
         padding: 25px 19px 23px 18px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    
+
     .logo-link {
         text-decoration: none;
     }
-    
+
     .logo-text {
         font-family: 'Deftone Stylus';
         font-size: calc(14px + 1em);
@@ -37,34 +44,47 @@
         font-weight: 400;
         text-transform: uppercase;
     }
-    
+
     .logo-text:hover {
         opacity: 0.5;
     }
+
     /* navbar=========
 ======== */
-    
+
     .navigation-menu {
         width: 70px;
-        height: calc(58em - 16px);
+        height: calc(100vh - 70px);
         display: flex;
         flex-direction: column;
         background: -webkit-linear-gradient(to bottom, #F77358, #FD5272);
         background: linear-gradient(to bottom, #F77358, #FD5272);
+        position: relative;
+
     }
-    
+
+    .navigation-menu::before,
+    .navigation-menu::after {
+        content: '';
+        position: absolute;
+        left: 70px;
+        top: 38px;
+        border: 8px solid transparent;
+        border-left: 5px solid #F77358;
+    }
+
     .nav-link {
         display: flex;
         flex-direction: column;
         text-decoration: none;
     }
-    
+
     .nav-text {
         font-size: 10px;
         text-align: center;
         color: #FFFFFF;
     }
-    
+
     .nav-img {
         width: 20px;
         height: 18px;
@@ -72,19 +92,37 @@
         padding-top: 30px;
         padding-bottom: 10px;
     }
-    
+
     .power {
-        margin: auto auto 19px auto;
-    }
-    
+        margin-top: auto;
+        margin-bottom: 19px;
+        background: none;
+        border: none;
+        outline: none;
+            img {
+                cursor: pointer;
+            }
+        
+        }
+        
+
     .power-img:hover {
         opacity: 0.5;
     }
-    
+
     .nav-img:hover {
         opacity: 0.5;
     }
-    
+
     .nav-text:hover {
         opacity: 0.5;
+    }
+
+    /* HEADER================
+ =============*/
+
+    header {
+        width: 100%;
+        margin-left: 70px;
+        background: #FC7858;
     }

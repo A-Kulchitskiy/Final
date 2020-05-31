@@ -4,23 +4,32 @@
 }
 
 body {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-}
-
-.container {
-  width: 1140px;
+  width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Navigation==============
 ============= */
 /* logotype==========
 ========= */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .logo {
   width: 33px;
   height: 23px;
   padding: 25px 19px 23px 18px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo-link {
@@ -28,8 +37,9 @@ body {
 }
 
 .logo-text {
-  font-family: "Deftone Stylus";
+  font-family: 'Deftone Stylus';
   font-size: calc(14px + 1em);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FC7858), to(#FD4F74));
   background: linear-gradient(to bottom, #FC7858, #FD4F74);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,15 +56,37 @@ body {
 ======== */
 .navigation-menu {
   width: 70px;
-  height: calc(58em - 16px);
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F77358), to(#FD5272));
   background: linear-gradient(to bottom, #F77358, #FD5272);
+  position: relative;
+}
+
+.navigation-menu::before,
+.navigation-menu::after {
+  content: '';
+  position: absolute;
+  left: 70px;
+  top: 38px;
+  border: 8px solid transparent;
+  border-left: 5px solid #F77358;
 }
 
 .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
 }
 
@@ -73,7 +105,15 @@ body {
 }
 
 .power {
-  margin: auto auto 19px auto;
+  margin-top: auto;
+  margin-bottom: 19px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.power img {
+  cursor: pointer;
 }
 
 .power-img:hover {
@@ -87,3 +127,12 @@ body {
 .nav-text:hover {
   opacity: 0.5;
 }
+
+/* HEADER================
+ =============*/
+header {
+  width: 100%;
+  margin-left: 70px;
+  background: #FC7858;
+}
+/*# sourceMappingURL=style.css.map */

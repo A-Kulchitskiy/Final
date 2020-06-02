@@ -4,11 +4,7 @@
 }
 
 body {
-  width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -18,7 +14,7 @@ body {
 ============= */
 /* logotype==========
 ========= */
-.container {
+.wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -126,8 +122,9 @@ body {
 
 /* HEADER================
  =============*/
+/* header-top==================
+==================*/
 header {
-  width: 100%;
   margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +136,7 @@ header {
 }
 
 header .top {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +231,10 @@ header .head-description {
   color: #BFBFBF;
 }
 
+/*header-bottom============
+    =============*/
 .bottom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,11 +291,29 @@ header .head-description {
   border-top: 6px solid #FD5670;
 }
 
-.statistics .statistics-btn {
+.statistics-btn {
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.statistics .statistics-text {
+.statistics-btn p {
   font-size: 12px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, right top, left top, from(#FC7758), to(#FD5074));
+  background: linear-gradient(to left, #FC7758, #FD5074);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/* MAIN=================
+    ==========*/
+main {
+  margin: 20px;
+  margin-left: 90px;
+  padding: 20px;
+}
+
+/* main-top==============
+    ===========*/
 /*# sourceMappingURL=style.css.map */

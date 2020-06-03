@@ -1,3 +1,3 @@
-# lesson_7
+# Final
 
 https://a-kulchitskiy.github.io/Final/

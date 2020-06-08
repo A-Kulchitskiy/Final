@@ -490,14 +490,8 @@ main {
   font-weight: bold;
 }
 
-.sophie-profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.bottom-left .feed {
+  margin-top: 39px;
 }
 
 .sophie-profile .sophie-img {
@@ -506,9 +500,83 @@ main {
   background: url("../img/sophie.png") center center no-repeat;
 }
 
+.sophie-profile span {
+  color: #979796;
+  font-size: 8px;
+  padding-top: 13px;
+}
+
+.sophie-comment {
+  border: 1px solid #F1F1F1;
+}
+
+.sophie-comment p {
+  width: 298px;
+  font-size: 12px;
+  color: #777777;
+  background: #FCFCFC;
+  font-weight: lighter;
+  padding: 20px;
+  margin-left: 93px;
+}
+
+.sophie-comment p span {
+  font-weight: 900;
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
 .peter-profile .peter-img {
   width: 45px;
   height: 45px;
   background: url("../img/peter.png") center center no-repeat;
+}
+
+.peter-profile span {
+  color: #979796;
+  font-size: 8px;
+}
+
+.peter-comment {
+  border: 1px solid #F1F1F1;
+}
+
+.peter-comment p {
+  width: 298px;
+  font-size: 12px;
+  color: #777777;
+  background: #FCFCFC;
+  font-weight: lighter;
+  padding: 20px;
+  margin-left: 93px;
+}
+
+.peter-comment p span {
+  font-weight: 900;
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+.mini-comments {
+  background: #FCFCFC;
+}
+
+.mini-comments .mini {
+  margin-left: 121px;
+  border: 1px solid #F1F1F1;
+}
+
+.mini-comments .mini p {
+  width: 275px;
+  font-size: 12px;
+  color: #777777;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.mini-comments .mini p span {
+  font-weight: 900;
+  font-size: 14px;
+  color: #5f5f5f;
 }
 /*# sourceMappingURL=style.css.map */

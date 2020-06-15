@@ -111,7 +111,7 @@
         <main>
             <div class="container-main">
                 <div class="main-top">
-                    <div class="monthly-stat">
+                    <div class="monthly-stat main-block">
                         <div class="top-monthly">
                             <div class="monthly-menu">
                                 <h3 class="monthly-text">Monthly Revenue Progress</h3>
@@ -151,7 +151,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top-hour">
+                    <div class="top-hour main-block">
                         <h4>Revenue Per Hour</h4>
                         <img src="./img/icon/hour-stat.jpg" alt="hour-stat">
                         <div class="hour-info">
@@ -161,39 +161,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__bottom">
-                    <div class="bottom-left">
-                        <h3>Customers Feed</h3>
-                        <div class="feed">
-                            <div class="sophie-title">
-                                <div class="sophie-profile">
+                <div class="bottom-block">
+                    <div class="main-bottom main-block">
+                        <div class="customers-feed">
+                            <h3>Customers Feed</h3>
+                            <div class="feed">
+                                <div class="profile">
                                     <div class="sophie-img"></div>
-                                    <span>10 Min Ago</span>
+                                    <p>10 Min Ago</p>
                                 </div>
-                                <div class="sophie-comment">
+                                <div class="comments">
                                     <p>
                                         <span> Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     </p>
+                                    <div class="mini-comments">
+                                        <p>
+                                            <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        </p>
+                                        <p>
+                                            <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mini-comments">
-                                <div class="mini">
-                                    <p>
-                                        <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                                <div class="mini">
-                                    <p>
-                                        <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="peter-title">
-                                <div class="peter-profile">
+                            <div class="feed">
+                                <div class="profile">
                                     <div class="peter-img"></div>
-                                    <span>15 Min Ago</span>
+                                    <p>15 Min Ago</p>
                                 </div>
-                                <div class="peter-comment">
+                                <div class="comments">
                                     <p>
                                         <span>Peter Quill</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     </p>
@@ -201,10 +197,41 @@
                             </div>
                         </div>
                     </div>
+                    <div class="main-bottom">
+                        <div class="task main-block">
+                            <h3>Today Task</h3>
+                            <div class="task__list">
+                                <form>
+                                    <ul>
+                                        <li><input type="checkbox" id="checkbox1">
+                                            <label for="checkbox1"></label>
+
+                                            <p>Arrange</p>
+                                            <span>simply dummy text of the printing and</span><span class="time">12:24 AM</span>
+                                        </li>
+                                        <li><input type="checkbox" id="checkbox2">
+                                            <label for="checkbox2"></label>
+                                            <p>Arrange</p>
+                                            <span>simply dummy text of the printing and</span><span class="time">12:24 AM</span>
+                                        </li>
+                                        <li><input type="checkbox" id="checkbox3">
+                                            <label for="checkbox3"></label>
+                                            <p>Arrange</p>
+                                            <span>simply dummy text of the printing and</span><span class="time">12:24 AM</span>
+                                        </li>
+                                        <li><input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4"></label>
+                                            <p>Arrange</p>
+                                            <span>simply dummy text of the printing and</span><span class="time">12:24 AM</span>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </main>
-    </div>
+        </div>
 </body>
 
 </html>
